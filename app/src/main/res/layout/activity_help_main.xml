@@ -62,7 +62,6 @@
     <Button
         android:id="@+id/q1_button"
         android:layout_width="335dp"
-        android:layout_height="56dp"
         android:layout_marginStart="18dp"
         android:layout_marginTop="6dp"
         android:layout_marginEnd="64dp"
@@ -73,5 +72,144 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/faq_textView" />
+
+    <Button
+        android:id="@+id/q2_button"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="61dp"
+        android:backgroundTint="#18752C"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:text="How do I request a refund?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/q1_button" />
+
+    <Button
+        android:id="@+id/q3_button"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#18752C"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:text="How do I post?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/q2_button" />
+
+    <TextView
+        android:id="@+id/faq_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="261dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:text="Contact Us"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/q3_button" />
+
+    <EditText
+        android:id="@+id/faq_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="170dp"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:hint="Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faq_textView2" />
+
+    <EditText
+        android:id="@+id/faq_editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="170dp"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:hint="Email Address"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faq_editText" />
+
+    <EditText
+        android:id="@+id/faq_editText3"
+        android:layout_width="272dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="115dp"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:hint="Phone Number (Optional)"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faq_editText2" />
+
+    <EditText
+        android:id="@+id/faq_editText4"
+        android:layout_width="361dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="26dp"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:hint="Message"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faq_editText3" />
+
+    <TextView
+        android:id="@+id/faq_textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:text="Type: "
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faq_editText4" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="181dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/faq_textView3"
+        app:layout_constraintTop_toBottomOf="@+id/faq_editText4" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="113dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="17dp"
+        android:backgroundTint="#18752C"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/faq_editText4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
