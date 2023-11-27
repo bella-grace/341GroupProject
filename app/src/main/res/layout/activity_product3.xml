@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductActivity3">
+
+    <ImageView
+        android:id="@+id/topBar2"
+        android:layout_width="411dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginEnd="-5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/headerbar" />
+
+    <TextView
+        android:id="@+id/topBarBrand2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:text="2FRESH2WASTE"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="@+id/topBar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/topBar2"
+        app:layout_constraintTop_toTopOf="@+id/topBar2" />
+
+    <ImageView
+        android:id="@+id/profilePic2"
+        android:layout_width="49dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/john" />
+
+    <ImageButton
+        android:id="@+id/backMain2"
+        android:layout_width="68dp"
+        android:layout_height="54dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backbtn" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="258dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="260dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Send A Message To Inquire!"
+        android:textAlignment="center"
+        android:textColor="#A2A2A2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextText"
+        style="@style/Widget.Material3.AutoCompleteTextView.FilledBox"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Hi! I'm interested..."
+        android:inputType="text"
+        android:singleLine="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.236"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.727" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.732"
+        app:srcCompat="@drawable/send_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

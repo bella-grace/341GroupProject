@@ -33,29 +33,31 @@
 
     <ImageView
         android:id="@+id/profileimg"
-        android:layout_width="325dp"
-        android:layout_height="271dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="334dp"
+        android:layout_height="238dp"
         android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
         app:srcCompat="@drawable/carrot" />
 
     <TextView
         android:id="@+id/productName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="340dp"
         android:fontFamily="@font/montserrat_extrabold"
         android:paddingBottom="0sp"
         android:text="CARROTS"
         android:textColor="#000000"
         android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.22"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.478" />
 
     <ImageView
         android:id="@+id/sellerImg"
@@ -113,35 +115,42 @@
         android:text="$2.20"
         android:textColor="#18752C"
         android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintHorizontal_bias="0.189"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/locationName" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.676" />
 
     <TextView
         android:id="@+id/unit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="15dp"
         android:fontFamily="@font/montserrat_extrabold"
         android:text="/kg"
         android:textColor="#18752C"
         android:textSize="34sp"
-        app:layout_constraintStart_toEndOf="@+id/price"
-        app:layout_constraintTop_toBottomOf="@+id/locationName" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.675" />
 
     <TextView
         android:id="@+id/expiry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:fontFamily="@font/montserrat_semibold"
         android:text="Expiry: November 30"
         android:textColor="#000000"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/price"
-        app:layout_constraintTop_toBottomOf="@+id/price" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.737" />
 
     <ImageView
         android:id="@+id/profilePic"
@@ -161,14 +170,15 @@
         android:id="@+id/msgBtn"
         android:layout_width="335dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
         android:backgroundTint="#18752C"
         android:fontFamily="@font/montserrat_extrabold"
         android:text="I'm Interested"
         android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/expiry" />
+        app:layout_constraintTop_toTopOf="@+id/topBar"
+        app:layout_constraintVertical_bias="0.825" />
 
     <ImageButton
         android:id="@+id/backMain"
