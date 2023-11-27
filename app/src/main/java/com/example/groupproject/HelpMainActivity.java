@@ -15,6 +15,11 @@ public class HelpMainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help_main);
+
+        Intent backintent=getIntent();
+        Intent backintent2=getIntent();
+        Intent backintent3=getIntent();
+        Intent backintent5=getIntent();
         Spinner spinner=findViewById(R.id.spinner);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.my_array,
@@ -27,6 +32,30 @@ public class HelpMainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(HelpMainActivity.this, HelpMainActivity2.class);
                 startActivity(intent);
+            }
+        });
+
+        Button button2 = (Button) findViewById(R.id.q2_button);
+        button2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent2 = new Intent(HelpMainActivity.this, HelpMainActivity3.class);
+                startActivity(intent2);
+            }
+        });
+
+        Button button3 = (Button) findViewById(R.id.q3_button);
+        button3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent3 = new Intent(HelpMainActivity.this, HelpMainActivity4.class);
+                startActivity(intent3);
+            }
+        });
+
+        Button button4 = (Button) findViewById(R.id.submit_button);
+        button4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent4 = new Intent(HelpMainActivity.this, HelpMainActivity5.class);
+                startActivity(intent4);
             }
         });
 
