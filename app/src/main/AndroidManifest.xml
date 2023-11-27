@@ -13,6 +13,18 @@
         android:theme="@style/Theme.GroupProject"
         tools:targetApi="31">
         <activity
+            android:name=".HelpMainActivity5"
+            android:exported="false" />
+        <activity
+            android:name=".HelpMainActivity4"
+            android:exported="false" />
+        <activity
+            android:name=".HelpMainActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".HelpMainActivity2"
+            android:exported="false" />
+        <activity
             android:name=".HelpMainActivity"
             android:exported="false" />
         <activity
