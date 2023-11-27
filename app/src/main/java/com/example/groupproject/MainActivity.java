@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,9 +17,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ImageView imageView = findViewById(R.id.imageView);
-        ImageView imageView2 = findViewById(R.id.imageView6);
-        ImageView imageView3 = findViewById(R.id.imageView7);
-        ImageView imageView4 = findViewById(R.id.imageView8);
         imageView.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageView imageView2 = findViewById(R.id.imageView6);
         imageView2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -31,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageView imageView3 = findViewById(R.id.imageView7);
         imageView3.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -38,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ImageView imageView4 = findViewById(R.id.imageView8);
         imageView4.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -45,7 +51,36 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        EditText mapSearch = findViewById(R.id.mapSearch);
+        mapSearch.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if (s.toString().equalsIgnoreCase("Ca")) {
+                    Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                    startActivity(intent);
+                }
+                if (s.toString().equalsIgnoreCase("Cu")) {
+                    Intent intent = new Intent(MainActivity.this, MainActivity3.class);
+                    startActivity(intent);
+                }
+                if (s.toString().equalsIgnoreCase("G")) {
+                    Intent intent = new Intent(MainActivity.this, MainActivity4.class);
+                    startActivity(intent);
+                }
+                if (s.toString().equalsIgnoreCase("P")) {
+                    Intent intent = new Intent(MainActivity.this, MainActivity5.class);
+                    startActivity(intent);
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+            }
+        });
     }
-
-
 }
