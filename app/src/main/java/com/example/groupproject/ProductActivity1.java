@@ -24,7 +24,7 @@ public class ProductActivity1 extends AppCompatActivity {
         toProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent toProfile = new Intent(ProductActivity1.this, ProductActivity2.class);
+                Intent toProfile = new Intent(ProductActivity1.this, ShowProfileActivity.class);
                 startActivity(toProfile);
             }
         });
@@ -34,6 +34,14 @@ public class ProductActivity1 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent toMain = new Intent(ProductActivity1.this, MainActivity.class);
                 startActivity(toMain);
+            }
+        });
+
+        interestedBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent toMsg = new Intent(ProductActivity1.this, MessageActivity.class);
+                startActivity(toMsg);
             }
         });
     }

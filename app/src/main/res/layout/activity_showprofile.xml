@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowProfileActivity">
+
+
+    <ImageView
+        android:id="@+id/topBar"
+        android:layout_width="411dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="-5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/headerbar" />
+
+    <TextView
+        android:id="@+id/topBarBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:text="2FRESH2WASTE"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="@+id/topBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/topBar"
+        app:layout_constraintTop_toTopOf="@+id/topBar" />
+
+    <ImageView
+        android:id="@+id/profileimg"
+        android:layout_width="345dp"
+        android:layout_height="270dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/topBar"
+        app:layout_constraintVertical_bias="0.159"
+        app:srcCompat="@drawable/julia_profilepic" />
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:paddingBottom="0sp"
+        android:text="Happy Farms"
+        android:textColor="#000000"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.518" />
+
+    <ImageView
+        android:id="@+id/locationImg"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="-9dp"
+        app:layout_constraintStart_toStartOf="@+id/farmerName"
+        app:layout_constraintTop_toBottomOf="@+id/farmerName"
+        app:srcCompat="@drawable/pin_icon" />
+
+    <ImageView
+        android:id="@+id/locationImg2"
+        android:layout_width="32dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/locationImg"
+        app:layout_constraintTop_toBottomOf="@+id/locationImg"
+        app:srcCompat="@drawable/message_icon" />
+
+    <TextView
+        android:id="@+id/locationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Lower Mission"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/locationImg"
+        app:layout_constraintTop_toBottomOf="@+id/farmerName" />
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Contact In-App"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/locationName"
+        app:layout_constraintTop_toBottomOf="@+id/locationName" />
+
+    <TextView
+        android:id="@+id/FarmerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Julia Fox"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/productName"
+        app:layout_constraintTop_toBottomOf="@+id/productName" />
+
+    <TextView
+        android:id="@+id/farmerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="she/her"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/FarmerName"
+        app:layout_constraintTop_toBottomOf="@+id/FarmerName" />
+
+    <ImageView
+        android:id="@+id/profilePic"
+        android:layout_width="49dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/john" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="345dp"
+        android:layout_height="41dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Seller Since March 2019"
+        android:textAlignment="center"
+        android:textColor="#18752C"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.826" />
+
+    <ImageButton
+        android:id="@+id/backMain3"
+        android:layout_width="68dp"
+        android:layout_height="54dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backbtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
