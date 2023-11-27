@@ -27,21 +27,21 @@ public class MainActivity extends AppCompatActivity {
         imageView2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ProductActivity2.class);
+                Intent intent = new Intent(MainActivity.this, ProductActivity3.class);
                 startActivity(intent);
             }
         });
         imageView3.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ProductActivity3.class);
+                Intent intent = new Intent(MainActivity.this, ProductActivity4.class);
                 startActivity(intent);
             }
         });
         imageView4.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ProductActivity4.class);
+                Intent intent = new Intent(MainActivity.this, ProductActivity2.class);
                 startActivity(intent);
             }
         });

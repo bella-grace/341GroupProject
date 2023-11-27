@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProductActivity1">
+    tools:context=".ShowProfileActivity">
+
 
     <ImageView
         android:id="@+id/topBar"
         android:layout_width="411dp"
         android:layout_height="59dp"
         android:layout_marginTop="-5dp"
-        android:layout_marginEnd="-5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,15 +33,15 @@
 
     <ImageView
         android:id="@+id/profileimg"
-        android:layout_width="334dp"
-        android:layout_height="238dp"
-        android:scaleType="fitXY"
+        android:layout_width="345dp"
+        android:layout_height="270dp"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.15"
-        app:srcCompat="@drawable/carrot" />
+        app:layout_constraintTop_toTopOf="@+id/topBar"
+        app:layout_constraintVertical_bias="0.159"
+        app:srcCompat="@drawable/julia_profilepic" />
 
     <TextView
         android:id="@+id/productName"
@@ -49,108 +49,82 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat_extrabold"
         android:paddingBottom="0sp"
-        android:text="CARROTS"
+        android:text="Happy Farms"
         android:textColor="#000000"
-        android:textSize="48sp"
+        android:textSize="42sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintHorizontal_bias="0.264"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.478" />
-
-    <ImageView
-        android:id="@+id/sellerImg"
-        android:layout_width="29dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="@+id/productName"
-        app:layout_constraintTop_toTopOf="@+id/toProfileBtn"
-        app:srcCompat="@drawable/seller_icon" />
-
-    <Button
-        android:id="@+id/toProfileBtn"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="175dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="-16dp"
-        android:fontFamily="@font/montserrat_semibold"
-        android:text="Happy Farms"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        app:iconPadding="0dp"
-        app:layout_constraintStart_toStartOf="@+id/productName"
-        app:layout_constraintTop_toBottomOf="@+id/productName" />
+        app:layout_constraintVertical_bias="0.518" />
 
     <ImageView
         android:id="@+id/locationImg"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        android:layout_marginStart="-5dp"
-        app:layout_constraintStart_toStartOf="@+id/sellerImg"
-        app:layout_constraintTop_toBottomOf="@+id/sellerImg"
+        android:layout_marginStart="-9dp"
+        app:layout_constraintStart_toStartOf="@+id/farmerName"
+        app:layout_constraintTop_toBottomOf="@+id/farmerName"
         app:srcCompat="@drawable/pin_icon" />
+
+    <ImageView
+        android:id="@+id/locationImg2"
+        android:layout_width="32dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/locationImg"
+        app:layout_constraintTop_toBottomOf="@+id/locationImg"
+        app:srcCompat="@drawable/message_icon" />
 
     <TextView
         android:id="@+id/locationName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="-5dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="3dp"
         android:fontFamily="@font/montserrat_semibold"
         android:text="Lower Mission"
         android:textColor="#000000"
-        android:textSize="16sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/locationImg"
-        app:layout_constraintTop_toBottomOf="@+id/toProfileBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/farmerName" />
 
     <TextView
-        android:id="@+id/price"
+        android:id="@+id/contact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_extrabold"
-        android:text="$2.20"
-        android:textColor="#18752C"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.189"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.676" />
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Contact In-App"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/locationName"
+        app:layout_constraintTop_toBottomOf="@+id/locationName" />
 
     <TextView
-        android:id="@+id/unit"
+        android:id="@+id/FarmerName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_extrabold"
-        android:text="/kg"
-        android:textColor="#18752C"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.675" />
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Julia Fox"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/productName"
+        app:layout_constraintTop_toBottomOf="@+id/productName" />
 
     <TextView
-        android:id="@+id/expiry"
+        android:id="@+id/farmerName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat_semibold"
-        android:text="Expiry: November 30"
+        android:text="she/her"
         android:textColor="#000000"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.214"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.737" />
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/FarmerName"
+        app:layout_constraintTop_toBottomOf="@+id/FarmerName" />
 
     <ImageView
         android:id="@+id/profilePic"
@@ -166,22 +140,23 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/john" />
 
-    <Button
-        android:id="@+id/msgBtn"
-        android:layout_width="335dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#18752C"
-        android:fontFamily="@font/montserrat_extrabold"
-        android:text="I'm Interested"
-        android:textSize="24sp"
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="345dp"
+        android:layout_height="41dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Seller Since March 2019"
+        android:textAlignment="center"
+        android:textColor="#18752C"
+        android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/topBar"
-        app:layout_constraintVertical_bias="0.825" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.826" />
 
     <ImageButton
-        android:id="@+id/backMain"
+        android:id="@+id/backMain3"
         android:layout_width="68dp"
         android:layout_height="54dp"
         android:background="@null"
@@ -191,4 +166,6 @@
         app:srcCompat="@drawable/backbtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 

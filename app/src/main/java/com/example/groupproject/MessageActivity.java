@@ -7,21 +7,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class ProductActivity4 extends AppCompatActivity {
-    ImageButton toMainPage;
+
+public class MessageActivity extends AppCompatActivity {
+
+    ImageButton toProduct;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_product1);
+        setContentView(R.layout.activity_message);
 
-        toMainPage = findViewById(R.id.backMain);
+        toProduct = findViewById(R.id.backMain2);
 
-        toMainPage.setOnClickListener(new View.OnClickListener() {
+        toProduct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent toMain = new Intent(ProductActivity4.this, MainActivity.class);
-                startActivity(toMain);
+                Intent toProduct = new Intent(MessageActivity.this, ProductActivity1.class);
+                startActivity(toProduct);
             }
         });
-    }
-}
+
+    }}
