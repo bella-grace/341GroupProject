@@ -19,10 +19,18 @@ public class HelpMainActivity5 extends AppCompatActivity {
         ImageButton add = findViewById(R.id.add);
         ImageButton map = findViewById(R.id.map);
         ImageButton home = findViewById(R.id.home);
+        ImageButton help=findViewById(R.id.help);
         map.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent1 = new Intent(HelpMainActivity5.this, MapActivity.class);
+                startActivity(intent1);
+            }
+        });
+        help.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(HelpMainActivity5.this, HelpMainActivity.class);
                 startActivity(intent1);
             }
         });
