@@ -8,6 +8,7 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
         ImageView imageView2 = findViewById(R.id.imageView6);
         imageView2.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -51,7 +51,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        ImageButton add = findViewById(R.id.add);
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(MainActivity.this, SellActivity.class);
+                startActivity(intent1);
+            }
+        });
         EditText mapSearch = findViewById(R.id.mapSearch);
         mapSearch.addTextChangedListener(new TextWatcher() {
             @Override

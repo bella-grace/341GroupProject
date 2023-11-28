@@ -12,5 +12,10 @@
         <item>"General Question"</item>
         <item>"Other"</item>
     </string-array>
+    <string-array name="weight">
+        <item>kilogram (kg)</item>
+        <item>pound (pd)</item>
+        <item>ounce (oz)</item>
+    </string-array>
 
 </resources>
