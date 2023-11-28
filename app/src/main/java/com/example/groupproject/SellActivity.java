@@ -143,7 +143,7 @@ public class SellActivity extends AppCompatActivity implements AdapterView.OnIte
         faq.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1 = new Intent(SellActivity.this, MapActivity.class);
+                Intent intent1 = new Intent(SellActivity.this, HelpMainActivity.class);
                 startActivity(intent1);
             }
         });

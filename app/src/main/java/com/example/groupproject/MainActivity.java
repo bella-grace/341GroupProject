@@ -3,6 +3,7 @@ package com.example.groupproject;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -52,6 +53,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         ImageButton add = findViewById(R.id.add);
+        ImageButton map = findViewById(R.id.map);
+        ImageButton faq = findViewById(R.id.faq);
+        map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(MainActivity.this, MapActivity.class);
+                startActivity(intent1);
+            }
+        });
+        faq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(MainActivity.this, HelpMainActivity.class);
+                startActivity(intent1);
+            }
+        });
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -3,6 +3,7 @@ package com.example.groupproject;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.wifi.hotspot2.pps.HomeSp;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +19,38 @@ public class ProductActivity1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product1);
 
+        ImageButton add = findViewById(R.id.add);
+        ImageButton map = findViewById(R.id.map);
+        ImageButton faq = findViewById(R.id.faq);
+        ImageButton home = findViewById(R.id.home);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(ProductActivity1.this, MainActivity.class);
+                startActivity(intent1);
+            }
+        });
+        map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(ProductActivity1.this, MapActivity.class);
+                startActivity(intent1);
+            }
+        });
+        faq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(ProductActivity1.this, HelpMainActivity.class);
+                startActivity(intent1);
+            }
+        });
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(ProductActivity1.this, SellActivity.class);
+                startActivity(intent1);
+            }
+        });
         interestedBtn = findViewById(R.id.msgBtn);
         toProfile = findViewById(R.id.toProfileBtn);
         toMainPage = findViewById(R.id.backMain);

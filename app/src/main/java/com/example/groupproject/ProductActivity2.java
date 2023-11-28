@@ -10,6 +10,8 @@ import android.widget.ImageButton;
 
 public class ProductActivity2 extends AppCompatActivity {
     ImageButton toMainPage;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +19,38 @@ public class ProductActivity2 extends AppCompatActivity {
 
         toMainPage = findViewById(R.id.backMain);
 
+        ImageButton add = findViewById(R.id.add);
+        ImageButton map = findViewById(R.id.map);
+        ImageButton faq = findViewById(R.id.faq);
+        ImageButton home = findViewById(R.id.home);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(ProductActivity2.this, MainActivity.class);
+                startActivity(intent1);
+            }
+        });
+        map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(ProductActivity2.this, MapActivity.class);
+                startActivity(intent1);
+            }
+        });
+        faq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(ProductActivity2.this, HelpMainActivity.class);
+                startActivity(intent1);
+            }
+        });
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(ProductActivity2.this, SellActivity.class);
+                startActivity(intent1);
+            }
+        });
         toMainPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
