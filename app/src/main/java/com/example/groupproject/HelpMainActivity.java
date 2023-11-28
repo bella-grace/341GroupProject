@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 
 public class HelpMainActivity extends AppCompatActivity {
@@ -15,6 +16,7 @@ public class HelpMainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help_main);
+Intent intent1=getIntent();
 
         Spinner spinner=findViewById(R.id.spinner);
 
@@ -22,6 +24,32 @@ public class HelpMainActivity extends AppCompatActivity {
                 android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
+
+        ImageButton add = findViewById(R.id.add);
+        ImageButton map = findViewById(R.id.map);
+        ImageButton home = findViewById(R.id.home);
+
+        map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(HelpMainActivity.this, MapActivity.class);
+                startActivity(intent1);
+            }
+        });
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(HelpMainActivity.this, MainActivity.class);
+                startActivity(intent1);
+            }
+        });
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(HelpMainActivity.this, SellActivity.class);
+                startActivity(intent1);
+            }
+        });
 
         Button button = (Button) findViewById(R.id.q1_button);
         button.setOnClickListener(new View.OnClickListener() {

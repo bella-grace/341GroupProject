@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class HelpMainActivity5 extends AppCompatActivity {
 
@@ -14,6 +15,31 @@ public class HelpMainActivity5 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help_main5);
         Intent intent5=getIntent();
+
+        ImageButton add = findViewById(R.id.add);
+        ImageButton map = findViewById(R.id.map);
+        ImageButton home = findViewById(R.id.home);
+        map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(HelpMainActivity5.this, MapActivity.class);
+                startActivity(intent1);
+            }
+        });
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(HelpMainActivity5.this, HelpMainActivity.class);
+                startActivity(intent1);
+            }
+        });
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(HelpMainActivity5.this, SellActivity.class);
+                startActivity(intent1);
+            }
+        });
 
         Button backbutton5 = (Button) findViewById(R.id.UndoButton);
         backbutton5.setOnClickListener(new View.OnClickListener() {
