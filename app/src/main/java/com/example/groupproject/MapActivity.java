@@ -1,19 +1,16 @@
 package com.example.groupproject;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.Map;
-
 public class MapActivity extends AppCompatActivity {
 
     ImageButton toCarrot, toPumpkin, toCucumber, toGrape;
-    ImageButton toHome, toMap, toAdd, toFAQ;
+    ImageButton toHome, toMap, toAdd, toHelp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +20,7 @@ public class MapActivity extends AppCompatActivity {
         toHome = findViewById(R.id.home);
         toMap = findViewById(R.id.map);
         toAdd = findViewById(R.id.add);
-        toFAQ = findViewById(R.id.faq);
+        toHelp = findViewById(R.id.help);
 
         toHome.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,7 +37,7 @@ public class MapActivity extends AppCompatActivity {
                 startActivity(intent1);
             }
         });
-        toFAQ.setOnClickListener(new View.OnClickListener() {
+        toHelp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent1 = new Intent(MapActivity.this, HelpMainActivity.class);

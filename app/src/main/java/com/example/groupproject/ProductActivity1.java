@@ -3,7 +3,6 @@ package com.example.groupproject;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.net.wifi.hotspot2.pps.HomeSp;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,7 +20,7 @@ public class ProductActivity1 extends AppCompatActivity {
 
         ImageButton add = findViewById(R.id.add);
         ImageButton map = findViewById(R.id.map);
-        ImageButton faq = findViewById(R.id.faq);
+        ImageButton faq = findViewById(R.id.help);
         ImageButton home = findViewById(R.id.home);
         home.setOnClickListener(new View.OnClickListener() {
             @Override

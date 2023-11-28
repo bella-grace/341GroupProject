@@ -17,7 +17,7 @@ public class ProductActivity4 extends AppCompatActivity {
         toMainPage = findViewById(R.id.backMain);
         ImageButton add = findViewById(R.id.add);
         ImageButton map = findViewById(R.id.map);
-        ImageButton faq = findViewById(R.id.faq);
+        ImageButton faq = findViewById(R.id.help);
         ImageButton home = findViewById(R.id.home);
         home.setOnClickListener(new View.OnClickListener() {
             @Override

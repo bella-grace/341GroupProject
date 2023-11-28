@@ -123,7 +123,7 @@ public class SellActivity extends AppCompatActivity implements AdapterView.OnIte
         // footer
         home = findViewById(R.id.home);
         map = findViewById(R.id.map);
-        faq = findViewById(R.id.faq);
+        faq = findViewById(R.id.help);
         add = findViewById(R.id.add);
         home.setOnClickListener(new View.OnClickListener() {
             @Override

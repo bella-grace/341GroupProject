@@ -16,10 +16,6 @@ public class HelpMainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help_main);
 
-        Intent backintent=getIntent();
-        Intent backintent2=getIntent();
-        Intent backintent3=getIntent();
-        Intent backintent5=getIntent();
         Spinner spinner=findViewById(R.id.spinner);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.my_array,
