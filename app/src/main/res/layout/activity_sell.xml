@@ -314,7 +314,7 @@
         app:layout_constraintLeft_toRightOf="@+id/insertlocation"
         app:layout_constraintBottom_toBottomOf="@+id/insertlocation"
         />
-    <ImageView
+    <ImageButton
         android:id="@+id/mapp"
         android:layout_width="@+id/pdesc"
         android:layout_height="50dp"

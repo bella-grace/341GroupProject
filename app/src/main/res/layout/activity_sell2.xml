@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/headerbar" />
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:text="2FRESH2WASTE"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.00999999" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/john"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/x_transparenttiny"
+        app:layout_constraintStart_toStartOf="@+id/topBar"
+        app:layout_constraintTop_toBottomOf="@+id/topBar" />
+
+    <TextView
+        android:id="@+id/newpost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:text="MEETING LOCATION"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/header"
+        app:layout_constraintStart_toStartOf="@+id/header"
+        app:layout_constraintTop_toBottomOf="@+id/topBar" />
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/newpost"
+        app:layout_constraintTop_toBottomOf="@+id/newpost"
+        />
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/line"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Edit meeting Address..."
+        android:padding="10dp"
+        />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:text="Saved Locations:"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/search"
+        app:layout_constraintStart_toStartOf="@+id/search"
+        />
+    <ImageView
+        android:id="@+id/pin"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        app:layout_constraintTop_toBottomOf="@id/text"
+        app:layout_constraintStart_toStartOf="@+id/text"
+        android:src="@drawable/pin_icon"
+        />
+    <TextView
+        android:id="@+id/savedaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6879 Academy Way"
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/montserrat_semibold"
+        app:layout_constraintStart_toEndOf="@+id/pin"
+        app:layout_constraintTop_toBottomOf="@id/text"
+        app:layout_constraintBottom_toBottomOf="@+id/pin"
+        />
+    <ImageView
+        android:id="@+id/pin2"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/pin"
+        app:layout_constraintStart_toStartOf="@+id/pin"
+        android:src="@drawable/pin_icon"
+        />
+
+    <TextView
+        android:id="@+id/savedaddress2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="48-698 Broadway Avenue"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pin2"
+        app:layout_constraintStart_toEndOf="@+id/pin2"
+
+        app:layout_constraintTop_toBottomOf="@id/savedaddress"
+        app:layout_constraintVertical_bias="0.703" />
+    <ImageView
+        android:id="@+id/pin3"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/pin2"
+        app:layout_constraintStart_toStartOf="@+id/pin2"
+        android:src="@drawable/pin_icon"
+        />
+    <TextView
+        android:id="@+id/savedaddress3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Downtown Kelowna Library"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pin3"
+        app:layout_constraintStart_toEndOf="@+id/pin3"
+        app:layout_constraintTop_toBottomOf="@id/savedaddress2"
+        app:layout_constraintVertical_bias="0.703" />
+    <TextView
+        android:id="@+id/meeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/pin3"
+        app:layout_constraintStart_toStartOf="@+id/pin3"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:text="Meeting Here:"
+        android:textSize="18sp"
+        />
+    <ImageView
+        android:id="@+id/map"
+        android:layout_width="300dp"
+        android:layout_height="210dp"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toBottomOf="@id/meeting"
+        app:layout_constraintStart_toStartOf="@+id/meeting"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/map"
+        />
+    <TextView
+        android:id="@+id/meeting2"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/map"
+        app:layout_constraintStart_toStartOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="@+id/map"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:text="Current Meeting Loction:"
+        android:textSize="14sp"
+        />
+    <TextView
+        android:id="@+id/finalmeet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6879 Academy Way"
+        android:textSize="26sp"
+        android:textColor="#18752C"
+        android:fontFamily="@font/montserrat_extrabold"
+        app:layout_constraintTop_toBottomOf="@id/meeting2"
+        app:layout_constraintStart_toStartOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="@+id/map"
+        />
+    <ImageButton
+        android:id="@+id/backbtn"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="20dp"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/backbtn"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:text="Confirm"
+        android:textSize="23dp"
+        android:textColor="#18752C"
+        app:layout_constraintBottom_toBottomOf="@id/backbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/finalmeet"
+        app:layout_constraintTop_toTopOf="@id/backbtn"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

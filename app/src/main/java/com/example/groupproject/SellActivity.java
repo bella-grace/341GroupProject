@@ -24,7 +24,7 @@ import java.util.Calendar;
 import java.util.Locale;
 
 public class SellActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-     ImageButton home, map, add, faq;
+     ImageButton home, map, add, faq, toLocations;
      Button addimage, post;
      int gallary_req_code = 1000;
     TextView contactmethod;
@@ -147,6 +147,24 @@ public class SellActivity extends AppCompatActivity implements AdapterView.OnIte
                 startActivity(intent1);
             }
         });
+
+        // open new activity when click on image
+        toLocations = findViewById(R.id.mapp);
+        toLocations.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(SellActivity.this, SellActivity2.class);
+                startActivity(intent1);
+            }
+        });
+        faq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(SellActivity.this, HelpMainActivity.class);
+                startActivity(intent1);
+            }
+        });
+
     }
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
