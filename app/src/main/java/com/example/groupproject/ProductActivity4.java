@@ -12,7 +12,7 @@ public class ProductActivity4 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_product1);
+        setContentView(R.layout.activity_product4);
 
         toMainPage = findViewById(R.id.backMain);
         ImageButton add = findViewById(R.id.add);
