@@ -46,10 +46,9 @@
             android:name=".SellActivity2"
             android:exported="false" />
         <activity
-            android:name=".FAQMainActivity"
+            android:name=".HelpMainActivity"
             android:exported="false"
-            android:label="@string/title_activity_faqmain"
-            android:theme="@style/Theme.GroupProject" />
+            tools:ignore="DuplicateActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
