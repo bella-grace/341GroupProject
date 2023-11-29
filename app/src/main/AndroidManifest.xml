@@ -49,9 +49,13 @@
             android:name=".SellActivity"
             android:exported="false" />
         <activity
-            android:name=".HelpMainActivity"
+            android:name=".SellActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".FAQMainActivity"
             android:exported="false"
-            />
+            android:label="@string/title_activity_faqmain"
+            android:theme="@style/Theme.GroupProject" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
