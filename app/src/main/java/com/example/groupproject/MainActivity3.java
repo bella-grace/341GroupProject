@@ -26,7 +26,7 @@ public class MainActivity3 extends AppCompatActivity {
             }
         });
 
-        EditText mapSearch = findViewById(R.id.mapSearch);
+        EditText mapSearch = findViewById(R.id.mapSearch2);
         mapSearch.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
