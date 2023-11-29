@@ -63,9 +63,9 @@
         android:id="@+id/UndoButton"
         android:layout_width="143dp"
         android:layout_height="63dp"
-        android:layout_marginStart="67dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="201dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="134dp"
         android:backgroundTint="#18752C"
         android:fontFamily="@font/montserrat_extrabold"
         android:text="Undo"
@@ -73,6 +73,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ContacttextView" />
+
     <TextView
         android:id="@+id/line2"
         android:layout_width="match_parent"
