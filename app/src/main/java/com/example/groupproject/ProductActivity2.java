@@ -10,7 +10,6 @@ import android.widget.ImageButton;
 public class ProductActivity2 extends AppCompatActivity {
     ImageButton toMainPage;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
